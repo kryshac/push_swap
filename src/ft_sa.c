@@ -6,7 +6,7 @@
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/25 13:19:21 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/28 16:13:06 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/01/29 15:43:39 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,5 @@ void	ft_sa(t_swap *list)
 	list->l_a[i - 1] = list->l_a[i] - list->l_a[i - 1];
 	list->l_a[i] -= list->l_a[i - 1];
 	list->oper++;
+	ft_printf("sa\n");
 }

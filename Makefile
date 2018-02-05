@@ -21,6 +21,7 @@ SOURCES = 	ft_push_swap.c \
 			ft_max_three.c \
 			ft_min_three.c \
 			ft_order_end.c \
+			ft_best_move_b.c \
 			ft_sa.c \
 			ft_sb.c \
 			ft_ss.c \
@@ -57,8 +58,9 @@ norme:
 test:
 	make re
 	$(CC) $(NAME) $(MAIN)
-	./a.out 92 97 33 93 47 26 31 38 89 51 64 37 63
+	#./a.out 92 97 33 93 47 26 31 38 89 51 64 37 63
 	#./a.out 2 1 3 6 5 8
+	./a.out 11 81 22 55 29 71 34 10 75 39 79
 
 clean:
 	@rm -f $(OBJS)

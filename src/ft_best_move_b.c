@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pa.c                                            :+:      :+:    :+:   */
+/*   ft_best_move_b.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/25 13:35:10 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/29 15:42:55 by ccristia         ###   ########.fr       */
+/*   Created: 2018/01/29 14:31:25 by ccristia          #+#    #+#             */
+/*   Updated: 2018/01/29 15:09:59 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ftpushswap.h"
 
-void	ft_pa(t_swap *list)
+void	ft_best_move_b(t_swap *list)
 {
-	if (list->i_b >= 0)
-		list->l_a[++list->i_a] = list->l_b[list->i_b--];
-	list->oper++;
-	ft_printf("pa\n");
+	int	a;
+	int	b;
+	int	c;
+
+	a = ft_abs(list->l_b[list->i_b - 1] - list->l_b[list->i_b]);
+	b = ft_abs(list->l_b[list->i_b - 1] - list->l_b[list->i_b - 2]);
+	c = ft_abs(list->l_b[list->i_b - 1] - list->l_b[0]);
+	if (a < b)
+	{
+		if (a < c)
+			ft_rb(list);
+		else
+			ft_sb(list);
+	}
+	else if (b < c)
+		ft_rb(list);
+	else
+		ft_sb(list);
 }

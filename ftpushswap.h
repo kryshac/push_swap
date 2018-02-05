@@ -6,7 +6,7 @@
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/25 12:56:46 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/28 23:18:15 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/01/29 14:38:14 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ void			ft_move_bootm(t_swap *list, int move);
 int				ft_max_three(int a, int b, int c);
 int				ft_min_three(int a, int b, int c);
 void			ft_order_end(t_swap *list);
+void			ft_best_move_b(t_swap *list);
 
 void			ft_order_three(t_swap *list);
 #endif

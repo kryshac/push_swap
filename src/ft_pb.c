@@ -6,7 +6,7 @@
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/25 13:35:10 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/28 16:12:35 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/01/29 15:44:30 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,5 @@ void	ft_pb(t_swap *list)
 	if (list->i_a >= 0)
 		list->l_b[++list->i_b] = list->l_a[list->i_a--];
 	list->oper++;
+	ft_printf("pb\n");
 }

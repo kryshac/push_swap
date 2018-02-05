@@ -6,7 +6,7 @@
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/26 14:44:59 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/26 14:52:21 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/01/29 15:43:47 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,5 @@ void	ft_rrr(t_swap *list)
 {
 	ft_rra(list);
 	ft_rrb(list);
+	ft_printf("rrr\n");
 }

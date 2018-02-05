@@ -6,7 +6,7 @@
 /*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/26 13:22:13 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/28 22:12:47 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/01/29 15:44:21 by ccristia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	ft_rb(t_swap *list)
 	}
 	list->l_b[0] = tmp;
 	list->oper++;
-	ft_printf("(--->ft_rb<---)\n");
+	ft_printf("rb\n");
 }
