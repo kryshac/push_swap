@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftpushswap.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kryshac <kryshac@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/25 12:56:46 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/29 14:38:14 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/02/06 18:35:46 by kryshac          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,6 @@ void			ft_order_end(t_swap *list);
 void			ft_best_move_b(t_swap *list);
 
 void			ft_order_three(t_swap *list);
+int				ft_stack_a_min_b(t_swap *list);
+int				ft_stack_a_min(t_swap *list);
 #endif

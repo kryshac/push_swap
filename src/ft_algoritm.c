@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_algoritm.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccristia <ccristia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kryshac <kryshac@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/26 15:05:09 by ccristia          #+#    #+#             */
-/*   Updated: 2018/01/30 18:27:49 by ccristia         ###   ########.fr       */
+/*   Updated: 2018/02/06 19:29:29 by kryshac          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -239,9 +239,59 @@ void	ft_algoritm(t_swap *list)
 	ft_print_stack(list);
 	while (list->i_a > 2)
 	{
-		//ft_print_stack(list);
-		ft_move_in_b(list);
+		ft_print_stack(list);
+		int	test = ft_stack_a_min_b(list);
+		if (test == 'a')
+			;
+		else if (test == 'b')
+			ft_ra(list);
+		else if (test == 'c')
+		{
+			ft_ra(list);
+			ft_ra(list);
+		}
+		else if (test == 'f')
+		{
+			ft_ra(list);
+			ft_ra(list);
+			ft_ra(list);
+		}
+		else if (test == 'g')
+		{
+			ft_rra(list);
+			ft_rra(list);
+			ft_rra(list);
+		}
+		else if (test == 'd')
+		{
+			ft_rra(list);
+			ft_rra(list);
+		}
+		else if (test == 'e')
+			ft_rra(list);
+		else
+		{
+			test = ft_stack_a_min(list);
+			if (test == 'a')
+				;
+			else if (test == 'b')
+				ft_ra(list);
+			else if (test == 'c')
+			{
+				ft_ra(list);
+				ft_ra(list);
+			}
+			else if (test == 'd')
+			{
+				ft_rra(list);
+				ft_rra(list);
+			}
+			else if (test == 'e')
+				ft_rra(list);
+		}
 		ft_pb(list);
+		// ft_move_in_b(list);
+		//ft_pb(list);
 	}
 		//ft_pb(list);
 	//list->max_a = 15;

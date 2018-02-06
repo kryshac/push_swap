@@ -2,7 +2,7 @@ C = clang
 
 NAME = pushswap.a
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = #-Wall -Wextra -Werror
 
 FTPRINTF = ft_printf
 
@@ -32,7 +32,9 @@ SOURCES = 	ft_push_swap.c \
 			ft_rr.c \
 			ft_rra.c \
 			ft_rrb.c \
-			ft_rrr.c
+			ft_rrr.c \
+			ft_stack_a_min_b.c \
+			ft_stack_a_min.c
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 
@@ -60,7 +62,7 @@ test:
 	$(CC) $(NAME) $(MAIN)
 	#./a.out 92 97 33 93 47 26 31 38 89 51 64 37 63
 	#./a.out 2 1 3 6 5 8
-	./a.out 11 81 22 55 29 71 34 10 75 39 79
+	./a.out -14 28 87 57 -77 13 52 53 58 -22 -45 51 -37 -81 19 > text
 
 clean:
 	@rm -f $(OBJS)
